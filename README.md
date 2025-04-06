@@ -1,6 +1,10 @@
 # Overview
 
-This repository contains the backend code of the aidf project.
+This repository contains the backend code of the horizon hotel booking application.
+
+# Other project files
+1. Frontend - `https://github.com/NightHawkNB/horizon-frontend.git`
+2. Backend  - `https://github.com/NightHawkNB/horizon-backend.git`
 
 # Usage
 
