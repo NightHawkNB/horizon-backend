@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
-    "outDir": "dist",
-    "strict": true,
-    "lib": ["esnext"],
+    "target": "ES2020",
+    "module": "CommonJS",
+    "lib": ["ES2020"], // Only ECMAScript APIs (no DOM)
+    "types": ["node"], // Explicitly use Node.js types (ignores browser types)
+    "skipLibCheck": true, // Temporary workaround for Clerk's type issues
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "typeRoots": ["./node_modules/@types", "./src"],
-    "types": ["node"]
+    "strict": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
   },
-  "include": ["src/**/*.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
